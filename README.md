@@ -247,11 +247,4 @@ Distribua sob **MIT License** (ou outra de sua preferência). Exemplo rápido no
 
 ---
 
-Se quiser, eu:
-
--   **Gero um `Makefile`** pronto;
--   **Adiciono um `.gitignore`** com sugestões;
--   **Crio um `alunos.txt`** de exemplo;
--   **Faço um script de testes** que valida indexação e busca com arquivos pequenos.
-
-Qual é o próximo passo que prefere?
+<br>

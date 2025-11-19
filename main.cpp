@@ -13,12 +13,15 @@
 
 //  fazer pelo cmd, pelo bash nao funciona.
 //  g++ -std=c++17 *.hpp main.cpp -o main.exe
-// Para construir o índice a partir de arquivos em ./data/machado:
+//  Para construir o índice em ./data/machado:
 //  ./main.exe construir ./data/machado
-//  ou -  main.exe construir data/machado
-// Para buscar, os termos "comendo" e "cachorro", execute:
+//  ou: ->
+//  main.exe construir data/machado
+//  Para buscar, os termos "cachorro", execute:
 //  ./main.exe buscar comendo cachorro
-//  ou -  main.exe buscar comendo cachorro
+//  ou: ->
+//  main.exe buscar comendo cachorro
+//  é isso boa sorte !!!
 int main(int argc, char *argv[])
 {
     if (argc < 2)
@@ -26,6 +29,8 @@ int main(int argc, char *argv[])
         std::cerr << "Uso: " << argv[0] << " construir <diretorio> | buscar <termos...>\n";
         return 1;
     }
+
+    // bom exemplo:  main.exe buscar espião.
 
     std::string command = argv[1];
 

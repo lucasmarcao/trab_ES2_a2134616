@@ -1,3 +1,0 @@
-
-
-int ronaldo = 21;

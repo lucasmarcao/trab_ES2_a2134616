@@ -1,3 +1,0 @@
-data/machado\conto\variasHistorias.txt
-data/machado\romance\quincas.txt
-data/machado\traducao\trabalhadoresMar.txt

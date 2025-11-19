@@ -1,7 +1,8 @@
 # Makefile para projeto: Índice Invertido (C++17, STL only)
 # -------------------------------------------------------
 # Uso rápido:
-#   make          -> compila (default)
+#   make all	   -> todos os casos
+#   make           -> compila (default)
 #   make run ARGS="construir ./data/machado"   -> executa binário com argumentos
 #   make index     -> compila e executa ./main.exe construir ./data/machado
 #   make search SEARCH="comendo cachorro" -> compila e executa ./main.exe buscar <termos>
@@ -10,6 +11,10 @@
 #   make help      -> imprime ajuda
 #
 # Ajuste variáveis abaixo se necessário.
+
+# no windowns 10/11
+#  main.exe construir data/machado
+#  main.exe buscar comendo cachorro
 
 CXX      := g++
 CXXFLAGS := -std=c++17 -O2 -Wall -Wextra
