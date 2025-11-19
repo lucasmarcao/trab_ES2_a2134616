@@ -3,25 +3,24 @@
 #include <string>
 #include <vector>
 
-#include "terminal.hpp"
-#include "armazenar.hpp"
-#include "TextProcessor.hpp"
-#include "Index.hpp"
-#include "Indexer.hpp"
-#include "Serializer.hpp"
-#include "QueryProcessor.hpp"
+#include "libs/terminal.hpp"
+#include "libs/armazenar.hpp"
+#include "libs/TextProcessor.hpp"
+#include "libs/Index.hpp"
+#include "libs/Indexer.hpp"
+#include "libs/Serializer.hpp"
+#include "libs/QueryProcessor.hpp"
 
 //  fazer pelo cmd, pelo bash nao funciona.
 //  g++ -std=c++17 *.hpp main.cpp -o main.exe
 //  Para construir o índice em ./data/machado:
 //  ./main.exe construir ./data/machado
-//  ou: ->
+//  ou: (cmd win11/10) ->
 //  main.exe construir data/machado
 //  Para buscar, os termos "cachorro", execute:
 //  ./main.exe buscar comendo cachorro
-//  ou: ->
+//  ou: (cmd win11/10)->
 //  main.exe buscar comendo cachorro
-//  é isso boa sorte !!!
 int main(int argc, char *argv[])
 {
     if (argc < 2)

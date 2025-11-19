@@ -20,7 +20,7 @@ CXX      := g++
 CXXFLAGS := -std=c++17 -O2 -Wall -Wextra
 TARGET   := main.exe
 SRCS     := main.cpp
-HEADERS  := $(wildcard *.hpp)
+HEADERS  := $(wildcard libs/*.hpp)
 
 # Diretórios / arquivos usados pelo programa
 DATA_DIR    := ./data/gerados

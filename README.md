@@ -8,13 +8,13 @@ Aplicação de linha de comando em C++ (apenas STL) que indexa arquivos `.txt` e
 ## 📌 Conteúdo deste repositório
 
 -   `main.cpp` — orquestra execução (construir / buscar).
--   `terminal.hpp` — utilitários de I/O no terminal.
--   `armazenar.hpp` — leitura de arquivos, listagem recursiva `.txt`, criação de `./data/gerados/`, carregamento de `stopwords.txt`.
--   `TextProcessor.hpp` — limpeza, normalização e tokenização.
--   `Index.hpp` — estrutura do índice invertido e mapeamento id↔arquivo.
--   `Indexer.hpp` — logic para varrer arquivos e popular o índice.
--   `Serializer.hpp` — serialização/desserialização binária manual.
--   `QueryProcessor.hpp` — processamento de consultas (AND entre termos) e escrita de `saida_busca_atual.txt`.
+-   `libs/terminal.hpp` — utilitários de I/O no terminal.
+-   `libs/armazenar.hpp` — leitura de arquivos, listagem recursiva `.txt`, criação de `./data/gerados/`, carregamento de `stopwords.txt`.
+-   `libs/TextProcessor.hpp` — limpeza, normalização e tokenização.
+-   `libs/Index.hpp` — estrutura do índice invertido e mapeamento id ↔ arquivo.
+-   `libs/Indexer.hpp` — logic para varrer arquivos e popular o índice.
+-   `libs/Serializer.hpp` — serialização/desserialização binária manual.
+-   `libs/QueryProcessor.hpp` — processamento de consultas (AND entre termos) e escrita de `saida_busca_atual.txt`.
 -   `data/` — dados (ex.: `machado/`, `stopwords.txt`, `gerados/`).
 
     -   `./data/gerados/index.dat` — arquivo binário com o índice.
@@ -41,7 +41,7 @@ Construir um mini-mecanismo de busca que:
 
 ```bash
 # comando simples
-g++ -std=c++17 *.hpp main.cpp -o main.exe
+g++ -std=c++17 libs/*.hpp main.cpp -o main.exe
 
 # ou, se preferir via Makefile (se houver):
 make
@@ -124,7 +124,7 @@ Arquivo binário (`index.dat`) contém, em ordem:
 -   Confirme se você compilou os arquivos atualizados:
 
     ```bash
-    date -r main.cpp && g++ -std=c++17 *.hpp main.cpp -o main.exe && ./main.exe construir ./data/machado
+    date -r main.cpp && g++ -std=c++17 libs/*.hpp main.cpp -o main.exe && ./main.exe construir ./data/machado
     ```
 
 -   Verifique permissões de escrita em `./data/gerados/`:
@@ -225,12 +225,12 @@ Distribua sob **MIT License** (ou outra de sua preferência). Exemplo rápido no
 
 ---
 
-## ✨ Toque final (bons comandos)
+## ✨ Toque final (bons comandos) (foco win11)
 
 -   Compilar:
 
     ```bash
-    g++ -std=c++17 *.hpp main.cpp -o main.exe
+    g++ -std=c++17 ./libs/*.hpp main.cpp -o main.exe
     ```
 
 -   Rodar index:
