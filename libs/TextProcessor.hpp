@@ -1,4 +1,3 @@
-// TextProcessor.hpp
 #ifndef TEXTPROCESSOR_HPP
 #define TEXTPROCESSOR_HPP
 
@@ -54,4 +53,4 @@ public:
     }
 };
 
-#endif // TEXTPROCESSOR_HPP
+#endif

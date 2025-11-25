@@ -33,6 +33,8 @@ Construir um mini-mecanismo de busca que:
 1. **Indexação**: lê uma coleção de `.txt`, normaliza (lowercase / remove pontuação), remove stopwords (em `./data/stopwords.txt`), cria índice invertido (palavra → lista de IDs de documento) e grava em `./data/gerados/index.dat` (binário).
 2. **Busca**: carregue `index.dat` e permita buscas por 1 ou múltiplos termos (AND), mostrando resultado no terminal e salvando em `./data/gerados/saida_busca_atual.txt`.
 
+### Link do git:  [trab_ES2_a2134616](https://github.com/lucasmarcao/trab_ES2_a2134616)
+
 ---
 
 ## 🛠️ Como compilar
@@ -47,7 +49,6 @@ g++ -std=c++17 libs/*.hpp main.cpp -o main.exe
 make
 ```
 
-Se houver erros, copie a primeira(s) linhas do erro e cole aqui — eu te ajudo a corrigir.
 
 ---
 
@@ -72,11 +73,11 @@ Se houver erros, copie a primeira(s) linhas do erro e cole aqui — eu te ajudo 
 -   Carrega `./data/gerados/index.dat` (se não existir, pede para rodar `construir`).
 -   Faz busca AND entre termos (`comendo` **E** `cachorro`).
 -   Resultados são impressos no terminal e gravados em `./data/gerados/saida_busca_atual.txt`.
--   Após a busca, o programa pergunta se deseja realizar outra busca (loop interativo).
+-   Após a busca, o programa pergunta se deseja realizar outra busca.
 
 ---
 
-## 🧭 Estrutura do índice (visão geral)
+## 🧭 Estrutura do índice.
 
 -   **indexMap** : `unordered_map<string, vector<int>>` — palavra → vetor ordenado de docIDs.
 -   **idToDoc** : `vector<string>` — posição (id-1) → caminho completo do arquivo.
@@ -85,7 +86,7 @@ Se houver erros, copie a primeira(s) linhas do erro e cole aqui — eu te ajudo 
 
 ---
 
-## 💾 Formato de serialização (alto nível)
+## 💾 Formato de serialização.
 
 Arquivo binário (`index.dat`) contém, em ordem:
 
@@ -140,7 +141,7 @@ Arquivo binário (`index.dat`) contém, em ordem:
 
 ## ✅ Boas práticas e observações
 
--   Todos os `.hpp` contêm definições **inline** das classes (conforme solicitado).
+-   Todos os `.hpp` contêm definições **inline** das classes.
 -   A aplicação usa apenas a **STL** (`unordered_map`, `vector`, `set_intersection`, `filesystem`, etc).
 -   A interseção das listas é feita manualmente (STL algorithms), e os postings são mantidos ordenados.
 -   Ao modificar os textos (adicionar/editar arquivos), re-execute `./main.exe construir <dir>` para atualizar o índice.
@@ -182,35 +183,13 @@ Arquivo binário (`index.dat`) contém, em ordem:
 
 ---
 
-## 📁 Arquivos úteis a incluir no repositório
-
--   `alunos.txt` — nomes dos autores / integrantes.
--   `LEIAME.txt` — instruções curtas para submissão (Moodle).
--   `Makefile` — target `all`, `clean`, `run`.
--   `.gitignore` — excluir `data/gerados/*` se o index não deve ser versionado:
-
-    ```
-    /data/gerados/*
-    *.exe
-    *.o
-    ```
-
--   `tests/` — exemplos `.txt` e scripts de teste.
-
----
 
 ## 🧑‍🤝‍🧑 Colaboradores
 
--   **Você** — autor principal do projeto (adicione seu nome em `alunos.txt`).
--   Se o trabalho for em dupla, adicione ambos os nomes em `alunos.txt`.
+-   **Lucas Antonio Marcão** — Apenas eu mesmo (RA:  `a2134616`).
 
 ---
 
-## 📜 Licença
-
-Distribua sob **MIT License** (ou outra de sua preferência). Exemplo rápido no repo (`LICENSE`).
-
----
 
 ## ❓ FAQ rápido
 
@@ -225,7 +204,7 @@ Distribua sob **MIT License** (ou outra de sua preferência). Exemplo rápido no
 
 ---
 
-## ✨ Toque final (bons comandos) (foco win11)
+## ✨ Toque final:
 
 -   Compilar:
 
@@ -247,4 +226,4 @@ Distribua sob **MIT License** (ou outra de sua preferência). Exemplo rápido no
 
 ---
 
-<br>
+

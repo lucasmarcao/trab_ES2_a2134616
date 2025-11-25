@@ -1,4 +1,3 @@
-// terminal.hpp
 #ifndef TERMINAL_HPP
 #define TERMINAL_HPP
 
@@ -43,4 +42,4 @@ public:
     }
 };
 
-#endif // TERMINAL_HPP
+#endif

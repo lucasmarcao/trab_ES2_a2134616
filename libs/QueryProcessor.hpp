@@ -1,4 +1,3 @@
-// QueryProcessor.hpp
 #ifndef QUERYPROCESSOR_HPP
 #define QUERYPROCESSOR_HPP
 
@@ -109,4 +108,4 @@ public:
     }
 };
 
-#endif // QUERYPROCESSOR_HPP
+#endif

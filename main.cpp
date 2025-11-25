@@ -1,4 +1,3 @@
-// main.cpp
 #include <iostream>
 #include <string>
 #include <vector>
@@ -29,7 +28,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    // bom exemplo:  main.exe buscar espião.
+    // bom exemplo:  main.exe buscar padaria.
 
     std::string command = argv[1];
 

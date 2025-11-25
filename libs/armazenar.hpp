@@ -1,4 +1,3 @@
-// armazenar.hpp
 #ifndef ARMAZENAR_HPP
 #define ARMAZENAR_HPP
 
@@ -98,4 +97,4 @@ public:
     }
 };
 
-#endif // ARMAZENAR_HPP
+#endif

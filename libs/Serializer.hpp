@@ -1,4 +1,3 @@
-// Serializer.hpp
 #ifndef SERIALIZER_HPP
 #define SERIALIZER_HPP
 
@@ -150,4 +149,4 @@ public:
     }
 };
 
-#endif // SERIALIZER_HPP
+#endif

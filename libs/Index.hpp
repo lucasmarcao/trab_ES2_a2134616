@@ -1,4 +1,3 @@
-// Index.hpp
 #ifndef INDEX_HPP
 #define INDEX_HPP
 
@@ -74,4 +73,4 @@ public:
     }
 };
 
-#endif // INDEX_HPP
+#endif
